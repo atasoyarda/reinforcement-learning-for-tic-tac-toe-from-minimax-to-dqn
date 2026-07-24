@@ -16,8 +16,16 @@ def create_empty_board():
 
     return board
 
-# Step 2 - encode_player (not yet solved)
-# TODO: implement
+# Step 2 - encode_player
+def encode_player(player):
+    # 'X' to 1, 'O' to -1, 'empty' to 0
+
+    if player == 'X':
+        return 1
+    if player == 'O':
+        return -1
+    if player == 'empty':
+        return 0
 
 # Step 3 - print_board (not yet solved)
 # TODO: implement
