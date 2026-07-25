@@ -27,8 +27,30 @@ def encode_player(player):
     if player == 'empty':
         return 0
 
-# Step 3 - print_board (not yet solved)
-# TODO: implement
+# Step 3 - print_board
+import numpy as np
+
+def print_board(board):
+    # 'X' (1), 'O' (-1), or '.' (0) in a 3x3 grid
+    for i in range(len(board)):
+      line=''
+      for r in range(len(board[i])):
+          if board[i][r] == 1:
+              if r > 0:
+                line+=' X'
+              else:
+                line+='X'
+          if board[i][r] == -1:
+              if r > 0:
+                line+=' O'
+              else:
+                line+='O'
+          if board[i][r] == 0:
+              if r > 0:
+                line+=' .'
+              else:
+                line+='.'
+      print(line)
 
 # Step 4 - is_cell_empty (not yet solved)
 # TODO: implement
